@@ -1,9 +1,7 @@
-FROM eclipse-temurin:21-jdk
+FROM nginx:alpine
 
-WORKDIR /app
+COPY index.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
+COPY validate.js /usr/share/nginx/html/
 
-COPY Calculator.java .
-
-RUN javac Calculator.java
-
-CMD ["java", "Calculator"]
+EXPOSE 80
