@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    padding: 30px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 8px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
