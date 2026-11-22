@@ -1,18 +1,19 @@
 body {
+    text-align: center;
     font-family: Arial;
-    background-color: lightblue;
-    padding: 30px;
+    background-color: lightyellow;
 }
 
 form {
     background-color: white;
     padding: 20px;
-    width: 400px;
+    width: 300px;
+    margin: auto;
 }
 
-input, textarea {
-    width: 95%;
+input, select {
     padding: 8px;
+    margin: 5px;
 }
 
 button {

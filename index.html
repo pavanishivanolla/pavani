@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Resume</title>
+    <title>Pizza Order</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h2>My Resume</h2>
+<h2>Pizza Order Form</h2>
 
-    <h3>Personal Details</h3>
-    <p><b>Name:</b> Your Name</p>
-    <p><b>Email:</b> yourname@gmail.com</p>
-    <p><b>Phone:</b> 9876543210</p>
+<form onsubmit="return orderPizza()">
 
-    <h3>Career Objective</h3>
-    <p>To obtain a good position in a reputed organization
-       where I can improve my skills and knowledge.</p>
+    Name:
+    <input type="text" id="name" required><br><br>
 
-    <form onsubmit="return validateform()">
+    Pizza Type:
+    <select id="pizza">
+        <option>Veg Pizza</option>
+        <option>Cheese Pizza</option>
+        <option>Paneer Pizza</option>
+    </select><br><br>
 
-        <h3>Education</h3>
-        <textarea id="education" placeholder="Enter your education details"></textarea>
+    Quantity:
+    <input type="number" id="quantity" min="1" required><br><br>
 
-        <h3>Skills</h3>
-        <input type="text" id="skills" placeholder="Enter your skills">
+    <button type="submit">Order</button>
 
-        <h3>Projects</h3>
-        <textarea id="projects" placeholder="Enter your projects"></textarea>
+</form>
 
-        <br><br>
-        <button type="submit">Submit Resume</button>
-
-
-    </form>
-
-    <script src="validate.js"></script>
+<script src="validate.js"></script>
 
 </body>
 </html>
- 

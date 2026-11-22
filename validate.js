@@ -1,23 +1,13 @@
-function validateform()
-{
-    var education = document.getElementById("education").value.trim();
-    var skills = document.getElementById("skills").value.trim();
-    var projects = document.getElementById("projects").value.trim();
+function orderPizza() {
 
-    if(education == "" || skills == "" || projects == "")
-    {
-        alert("Please fill all the fields");
+    var name = document.getElementById("name").value;
+    var quantity = document.getElementById("quantity").value;
+
+    if (name == "" || quantity < 1) {
+        alert("Enter valid details");
         return false;
     }
 
-    if(education.length < 5)
-    {
-        alert("Enter valid education details");
-        return false;
-    }
-
-    if(skills.length < 3)
-    {
-        alert("Enter valid skills");
-        return false;
-    }
+    alert("Pizza Ordered Successfully");
+    return false;
+}
